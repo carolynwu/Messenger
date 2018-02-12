@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from "./app.component";
 import {FormsModule} from "@angular/forms";
+import {MessageComponent} from "./messages/message.component";
 
 // decorator
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        MessageComponent
     ],
     imports: [BrowserModule,FormsModule],
     bootstrap: [AppComponent]
