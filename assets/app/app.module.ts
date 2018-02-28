@@ -6,6 +6,8 @@ import {FormsModule} from "@angular/forms";
 import {MessageComponent} from "./messages/message.component";
 import {MessageListComponent} from "./messages/message-list.component";
 import{ MessageInputComponent} from "./messages/message-input.component";
+import {AuthenticationComponent} from "./auth/authentication.component";
+import {HeaderComponent} from "./header.component";
 
 // decorator
 @NgModule({
@@ -13,7 +15,10 @@ import{ MessageInputComponent} from "./messages/message-input.component";
         AppComponent,
         MessageComponent,
         MessageListComponent,
-        MessageInputComponent
+        MessageInputComponent,
+        MessageComponent,
+        AuthenticationComponent,
+        HeaderComponent
     ],
     imports: [BrowserModule,FormsModule],
     bootstrap: [AppComponent]
