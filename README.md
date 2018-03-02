@@ -11,13 +11,14 @@ extra validation
 https://www.npmjs.com/package/mongoose-unique-validator   
 
 
-set up routing:  
+set up routing:  
+````
   const APP_ROUTES:Routes=[
   { path:'', redirectTo:'/messages',pathMatch:'full'},
   { path:'messages', component:MessagesComponent},
   { path:'auth', component:AuthenticationComponent}
 
   ];      
-
+````
 
 You can get also reference from here https://github.com/ericdouglas/MEAN-Learning
