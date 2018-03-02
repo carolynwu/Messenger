@@ -14,11 +14,12 @@ https://www.npmjs.com/package/mongoose-unique-validator
 set up routing:  
 ````
   const APP_ROUTES:Routes=[
-  { path:'', redirectTo:'/messages',pathMatch:'full'},
+  { path:'', redirectTo:'/messages',`pathMatch:'full'`},
   { path:'messages', component:MessagesComponent},
   { path:'auth', component:AuthenticationComponent}
 
   ];      
 ````
+App_Routes is the type of Routes which is provided by @angular router package,each route has a path which is the part we see in the URL after the slash
 
 You can get also reference from here https://github.com/ericdouglas/MEAN-Learning
