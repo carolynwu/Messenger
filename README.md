@@ -10,6 +10,9 @@ npm install --save mongoose-unique-validator
 extra validation
 https://www.npmjs.com/package/mongoose-unique-validator   
 
+Angular 2+NodeJS
+![capture](https://user-images.githubusercontent.com/22507322/36940847-e774772a-1f12-11e8-8a9a-f2ab7a70ba77.PNG)
+
 
 set up routing:  
 ````
