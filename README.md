@@ -11,7 +11,7 @@ extra validation
 https://www.npmjs.com/package/mongoose-unique-validator   
 
 Angular 2+NodeJS
-![capture](https://user-images.githubusercontent.com/22507322/36940847-e774772a-1f12-11e8-8a9a-f2ab7a70ba77.PNG)
+![screenshot 8](https://user-images.githubusercontent.com/22507322/36977257-2a4751c4-2046-11e8-9cda-ac5f74b00b64.png)
 
 
 set up routing:  
