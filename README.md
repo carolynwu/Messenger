@@ -9,11 +9,6 @@ After downloading MongoDB, follow https://docs.mongodb.com/manual/administration
 npm install --save mongoose-unique-validator  
 extra validation
 https://www.npmjs.com/package/mongoose-unique-validator   
-
-Angular 2+NodeJS
-![capture](https://user-images.githubusercontent.com/22507322/36940847-e774772a-1f12-11e8-8a9a-f2ab7a70ba77.PNG)
-
-
 set up routing:  
 ````
   const APP_ROUTES:Routes=[
@@ -24,6 +19,14 @@ set up routing:  
   
   export const routing=RouterModule.forRoot(APP_ROUTES);
 ````
+
+
+Angular 2+NodeJS
+![screenshot 8](https://user-images.githubusercontent.com/22507322/36977257-2a4751c4-2046-11e8-9cda-ac5f74b00b64.png)
+
+how to use http in Angular2?  
+make HTTP requests using RxJs Observable library.
+![screenshot 8 _li](https://user-images.githubusercontent.com/22507322/36978012-bd293ea6-2048-11e8-83db-418d9cd8d50c.jpg)
 
 
 App_Routes is the type of Routes which is provided by @angular router package,each route has a path which is the part we see in the URL after the slash.
