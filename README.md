@@ -26,6 +26,9 @@ set up routing:  
 ````
 
 
+how to use http in Angular2?  
+make HTTP requests using RxJs Observable library.
+
 App_Routes is the type of Routes which is provided by @angular router package,each route has a path which is the part we see in the URL after the slash.
 using the built-in RouterModule Angular2 ships with
 
