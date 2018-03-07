@@ -2,6 +2,7 @@
 
 Angular2 as a fronted-end, Node.js, Express and MongoDB as a backend
 
+First STTEP: Set up the environment:  
 
 First, you need to set up the environment, download Node.js with the lastest vision https://nodejs.org/en/ 
                                   mongoDB https://www.mongodb.com/download-center#community.
@@ -22,7 +23,7 @@ set up routing:  
   
   export const routing=RouterModule.forRoot(APP_ROUTES);
 ````
-
+Second STEP: figure out how to make node.js and Angular 2 work together
 
 Angular 2+NodeJS
 ![screenshot 8](https://user-images.githubusercontent.com/22507322/36977257-2a4751c4-2046-11e8-9cda-ac5f74b00b64.png)
