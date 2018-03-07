@@ -11,7 +11,7 @@ var messageRoutes=require("./routes/messages")
 
 //connect mongoose to app
 var app = express();
-mongoose.connect('localhost:27017/node-angular');
+mongoose.connect('mongodb://localhost:27017/node-angular');
 
 
 // view engine setup
