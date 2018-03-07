@@ -1,5 +1,8 @@
 # mean-stack
 
+Angular2 as a fronted-end, Node.js, Express and MongoDB as a backend
+
+
 First, you need to set up the environment, download Node.js with the lastest vision https://nodejs.org/en/ 
                                   mongoDB https://www.mongodb.com/download-center#community.
 
