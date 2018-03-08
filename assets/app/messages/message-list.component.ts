@@ -10,7 +10,6 @@ import {MessageService} from "./message.service";
             <!--dynamically add messages using ng !-->
             <app-message
                     [message]="message"
-                    (editClicked)="message.content=$event"
              *ngFor="let message of messages"> </app-message>
         </div> 
     `
