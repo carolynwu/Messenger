@@ -38,6 +38,7 @@ export class MessageInputComponent implements OnInit{
         form.resetForm();
     }
 
+    //input component gets informed when clicked edit button
     ngOnInit(){
         this.messageService.messageIsEdit.subscribe(
             (message:Message)=>this.message=message

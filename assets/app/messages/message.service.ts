@@ -36,6 +36,7 @@ export class MessageService{
             .catch((error:Response)=>Observable.throw(error.json()));
     }
 
+    // the service as a middle man between MessageComponent and input component
     editMessage(message:Message){
         this.messageIsEdit.emit(message);
     }
