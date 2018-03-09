@@ -13,7 +13,7 @@ export class MessageInputComponent implements OnInit{
 
     constructor(private messageService: MessageService){}
 
-
+//updating existing message
     onSubmit(form:NgForm){
      //console.log(form);
         if(this.message){
