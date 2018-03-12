@@ -28,7 +28,7 @@ export class MessageService{
                 const messages=response.json().obj;
                 let transformedMessages:Message[]=[];
                 for(let message of messages){
-                    transformedMessages.push(new Message(message.content,"carolyn", message.id,null));
+                    transformedMessages.push(new Message(message.content,"carolyn", message._id,null));
                 }
                 this.messages=transformedMessages;
                 return transformedMessages;
@@ -42,10 +42,17 @@ export class MessageService{
     }
 
     updateMessage(message:Message){
-
+        const body=JSON.stringify(message);
+        const headers=new Headers({'Content-Type': 'application/json'});
+        return this.http.patch("http://localhost:3000/message/"+message.messageId,body,{headers:headers})//observable
+            .map((response:Response)=>response.json())
+            .catch((error:Response)=> Observable.throw(error.json()));
     }
 
     deleteMessage(message:Message){
         this.messages.splice(this.messages.indexOf(message),1);
+        return this.http.delete("http://localhost:3000/message/"+message.messageId )//observable
+            .map((response:Response)=>response.json())
+            .catch((error:Response)=> Observable.throw(error.json()));
     }
 }
