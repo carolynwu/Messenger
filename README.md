@@ -23,6 +23,15 @@ set up routing:  
   
   export const routing=RouterModule.forRoot(APP_ROUTES);
 ````
+Encrypt the password stored in the database:
+````
+$ npm install --save bcryptjs
+````
+
+````
+var bcrypt = require('bcryptjs');
+````
+
 Second STEP: figure out how to make node.js and Angular 2 work together
 
 Angular 2+NodeJS
@@ -35,5 +44,8 @@ make HTTP requests using RxJs Observable library.
 
 App_Routes is the type of Routes which is provided by @angular router package,each route has a path which is the part we see in the URL after the slash.
 using the built-in RouterModule Angular2 ships with
+
+
+
 
 You can get also reference from here https://github.com/ericdouglas/MEAN-Learning
