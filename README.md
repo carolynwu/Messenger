@@ -23,14 +23,6 @@ set up routing:  
   
   export const routing=RouterModule.forRoot(APP_ROUTES);
 ````
-Encrypt the password stored in the database:
-````
-$ npm install --save bcryptjs
-````
-
-````
-var bcrypt = require('bcryptjs');
-````
 
 Second STEP: figure out how to make node.js and Angular 2 work together
 
@@ -45,6 +37,20 @@ make HTTP requests using RxJs Observable library.
 App_Routes is the type of Routes which is provided by @angular router package,each route has a path which is the part we see in the URL after the slash.
 using the built-in RouterModule Angular2 ships with
 
+
+Users and Authentication
+1. Encrypt the password stored in the database:
+````
+$ npm install --save bcryptjs
+````
+
+````
+var bcrypt = require('bcryptjs');
+````
+
+2. jwt（JSON Web Token）
+how to apply
+![jwt](https://user-images.githubusercontent.com/22507322/37370593-b52689be-26da-11e8-95ca-b76b252e379b.png)
 
 
 
