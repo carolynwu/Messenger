@@ -7,7 +7,8 @@ var bodyParser = require('body-parser');
 var mongoose =require("mongoose");
 
 var appRoutes = require('./routes/app');
-var messageRoutes=require("./routes/messages")
+var messageRoutes=require("./routes/messages");
+var userRoutes=require("./routes/user");
 
 //connect mongoose to app
 var app = express();
@@ -38,6 +39,7 @@ app.use(function (req, res, next) {
 
 // messageRoutes come first
 app.use('/message', messageRoutes);
+app.use('/user', userRoutes);
 app.use('/', appRoutes);
 
 
