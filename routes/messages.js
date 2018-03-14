@@ -9,6 +9,7 @@ var Message=require('../models/message');
 //backend function to fetch message from database
 router.get('/',function(req,res, next){
    Message.find()
+       .populate("user","firstName")
        .exec(function (err,messages) {
            if (err) {
                return res.status(500).json({
@@ -23,6 +24,7 @@ router.get('/',function(req,res, next){
        });
 });
 
+//if the user  sends a valid token
 router.use("/",function(req,res,next){
     jwt.verify(req.query.token,"secret", function (err,decoded) {
         if(err){
