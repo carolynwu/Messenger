@@ -49,6 +49,19 @@ var bcrypt = require('bcryptjs');
 ````
 
 2. jwt（JSON Web Token）
+1. based on a web standard
+2. used to securely communicate JSON object
+3. consists of a header, payload and signature
+4. self-contained
+
+````
+$ npm install --save jsonwebtoken
+````
+````
+var jwt = require('jsonwebtoken');
+var token = jwt.sign({ foo: 'bar' }, 'shhhhh');
+````
+
 how to apply
 ![jwt](https://user-images.githubusercontent.com/22507322/37370593-b52689be-26da-11e8-95ca-b76b252e379b.png)
 
