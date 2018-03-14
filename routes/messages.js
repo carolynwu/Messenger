@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 var jwt=require("jsonwebtoken");
 
+var User=require("../models/user");
+
 var Message=require('../models/message');
 
 //backend function to fetch message from database
@@ -34,23 +36,35 @@ router.use("/",function(req,res,next){
 });
 
 router.post('/', function (req, res, next) {
-    var message=new Message({
-        //access the body attached to a request
-       content:req.body.content
-    });
-    message.save(function (err,result) {
-        // not only send respnose but also return to function
+    var decoded=jwt.decode(req.query.token);
+    User.findById(decode.user._id,function(err,user){
         if(err){
             return res.status(500).json({
                 title:"An erroe occured",
                 error:err
             });
         }
-        //if the error is null
-       res.status(201).json({
-           message:"Saved message",
-           obj:result
-       });
+        var message=new Message({
+            //access the body attached to a request
+            content:req.body.content,
+            user:user
+        });
+        message.save(function (err,result) {
+            // not only send respnose but also return to function
+            if(err){
+                return res.status(500).json({
+                    title:"An erroe occured",
+                    error:err
+                });
+            }
+            user.messages.push(result);
+            user.save();
+            //if the error is null
+            res.status(201).json({
+                message:"Saved message",
+                obj:result
+            });
+        });
     });
 });
 
