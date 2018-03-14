@@ -20,7 +20,8 @@ import {AuthService} from "./auth.service";
 })
 
 export class AuthenticationComponent{
-    consturctor( private authService: AuthService){}
+    constructor(private authService:AuthService){}
+
 
     isLoggedIn(){
         return this.authService.isLoggedIn();
