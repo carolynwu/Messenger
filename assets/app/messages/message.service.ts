@@ -13,14 +13,18 @@ export class MessageService{
     constructor(private http:Http){}
 
     addMessage(message:Message){
-        this.messages.push(message);
         const body=JSON.stringify(message);
         const headers=new Headers({'Content-Type': 'application/json'});
         const token=localStorage.getItem("token")
-        ? "?token=" +localStorage.getItem("token")
+            ? "?token=" +localStorage.getItem("token")
             :"";
         return this.http.post("http://localhost:3000/message"+token,body,{headers:headers})//observable
-              .map((response:Response)=>response.json())
+              .map((response:Response)=>{
+                 const result =response.json();
+                 const message=new Message(result.obj.content, "carolyn", result.obj._id,null);
+                 this.messages.push(message);
+                 return message;
+              })
             .catch((error:Response)=> Observable.throw(error.json()));
 
     }
