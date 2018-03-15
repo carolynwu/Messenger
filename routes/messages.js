@@ -49,7 +49,7 @@ router.post('/', function (req, res, next) {
         var message=new Message({
             //access the body attached to a request
             content:req.body.content,
-            user:user
+            user:user._id
         });
         message.save(function (err,result) {
             // not only send respnose but also return to function
