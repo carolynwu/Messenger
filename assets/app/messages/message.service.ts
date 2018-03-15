@@ -4,13 +4,15 @@ import"rxjs/Rx";
 import {Injectable,EventEmitter} from "@angular/core";
 import {Observable} from "rxjs";
 
+import {ErrorService} from "../errors/error.service";
+
 @Injectable()
 
 export class MessageService{
     private messages:Message[]=[];
     messageIsEdit =new EventEmitter<Message>();
 
-    constructor(private http:Http){}
+    constructor(private http:Http, private errorService: ErrorService){}
 
     addMessage(message:Message){
         const body=JSON.stringify(message);
@@ -29,8 +31,10 @@ export class MessageService{
                  this.messages.push(message);
                  return message;
               })
-            .catch((error:Response)=> Observable.throw(error.json()));
-
+            .catch((error:Response)=> {
+                this.errorService.handleError(error.json());
+                return Observable.throw(error.json());
+               });
     }
 //override
     getMessage(){
@@ -49,7 +53,10 @@ export class MessageService{
                 this.messages=transformedMessages;
                 return transformedMessages;
         })
-            .catch((error:Response)=>Observable.throw(error.json()));
+            .catch((error:Response)=> {
+                this.errorService.handleError(error.json());
+                return Observable.throw(error.json());
+            });
     }
 
     // the service as a middle man between MessageComponent and input component
@@ -65,7 +72,10 @@ export class MessageService{
             : "";
         return this.http.patch("http://localhost:3000/message/"+message.messageId+token,body,{headers:headers})//observable
             .map((response:Response)=>response.json())
-            .catch((error:Response)=> Observable.throw(error.json()));
+            .catch((error:Response)=> {
+                this.errorService.handleError(error.json());
+                return Observable.throw(error.json());
+            });
     }
 
     deleteMessage(message:Message){
@@ -75,6 +85,9 @@ export class MessageService{
             : "";
         return this.http.delete("http://localhost:3000/message/"+message.messageId +token)//observable
             .map((response:Response)=>response.json())
-            .catch((error:Response)=> Observable.throw(error.json()));
+            .catch((error:Response)=> {
+                this.errorService.handleError(error.json());
+                return Observable.throw(error.json());
+            });
     }
 }
