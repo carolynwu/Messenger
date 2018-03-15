@@ -9,6 +9,7 @@ var Message=require('../models/message');
 //backend function to fetch message from database
 router.get('/',function(req,res, next){
    Message.find()
+       // expand the data which is retrieving
        .populate("user","firstName")
        .exec(function (err,messages) {
            if (err) {
