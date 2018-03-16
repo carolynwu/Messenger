@@ -9,9 +9,13 @@ Angular2 as a fronted-end, with Node.js, Express and MongoDB as a backend.
 
 ### knowledge about Node.js and Angular 
 * Some notes about Node.js:
-Node is a runtime environment for executing JavaScript code     
-There are two key components of the web application: client and service. Node.js is bascially JavaScript on the server part.    
-**Express.js**    
+
+Node is a runtime environment for executing JavaScript code.
+
+There are two key components of the web application: client and service. Node.js is bascially JavaScript on the server part.
+
+**Express.js**
+
 The framework
 
 
