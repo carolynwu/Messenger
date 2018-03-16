@@ -8,7 +8,7 @@ Use Mean stack to build a social network application.
 Angular2 as a fronted-end, with Node.js, Express and MongoDB as a backend.
 
 ## strategies
-. knowledge about Node.js and Angular 
+* knowledge about Node.js and Angular 
 Notes about Node.js:
 There are two key components of the website, client service and web service.
 
