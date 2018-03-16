@@ -1,6 +1,6 @@
 # mean-stack  
 
-[http://socialapplication-env.us-east-2.elasticbeanstalk.com]
+http://socialapplication-env.us-east-2.elasticbeanstalk.com
 
 Angular2 as a fronted-end, Node.js, Express and MongoDB as a backend
 
