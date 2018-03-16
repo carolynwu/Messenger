@@ -1,4 +1,4 @@
-# mean-stack  
+# Messenger  --network application
 
 :point_right:  :point_right:  http://socialapplication-env.us-east-2.elasticbeanstalk.com   :point_left: :point_left:
 
