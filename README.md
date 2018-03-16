@@ -1,10 +1,9 @@
-# Messenger  --network application
+# Messenger  --Network Application
 
 :zap: Click: http://socialapplication-env.us-east-2.elasticbeanstalk.com   
 
 ## introduction
-Use Mean stack to build a social network application.
-Angular2 as a fronted-end, with Node.js, Express and MongoDB as a backend.
+Use Mean stack to build a social network application.  Angular2 as a fronted-end, with Node.js, Express and MongoDB as a backend.
 
 ## strategies
 . knowledge about Node.js and Angular 
