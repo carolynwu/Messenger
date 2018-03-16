@@ -1,6 +1,6 @@
 # Messenger  --network application
 
-:point_right:  :point_right:  http://socialapplication-env.us-east-2.elasticbeanstalk.com   :point_left: :point_left:
+:paperclip: Click: http://socialapplication-env.us-east-2.elasticbeanstalk.com   
 
 Angular2 as a fronted-end, Node.js, Express and MongoDB as a backend
 
