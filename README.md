@@ -15,16 +15,17 @@ Node is a runtime environment for executing JavaScript code.
 There are two key components of the web application: client and service. Node.js is bascially JavaScript on the server part.
 
 **Express.js**
+> That you don't have to repeat same code over and over again. Node.js is a low-level I/O mechanism which has an HTTP module. If you just use an HTTP module, a lot of work like parsing the payload, cookies, storing sessions (in memory or in Redis), selecting the right route pattern based on regular expressions will have to be re-implemented. With Express.js it there for you to use. 
 
-The framework
+(reference from https://stackoverflow.com/questions/12616153/what-is-express-js)
 
+* some notes about Angular2:
+
+Angular2 uses TypeScript to provide a good user experience
 
 
 ## Strategies
-
-
-
-First STTEP: Set up the environment:  
+* First STTEP: Set up the environment:  
 
 First, you need to set up the environment, download Node.js with the lastest vision https://nodejs.org/en/ 
                                   mongoDB https://www.mongodb.com/download-center#community.
@@ -60,8 +61,9 @@ App_Routes is the type of Routes which is provided by @angular router package,ea
 using the built-in RouterModule Angular2 ships with
 
 
-Users and Authentication
+* Users and Authentication
 1. Encrypt the password stored in the database:
+
 ````
 $ npm install --save bcryptjs
 ````
@@ -71,10 +73,15 @@ var bcrypt = require('bcryptjs');
 ````
 
 2. jwt（JSON Web Token）
+
 1. based on a web standard
+
 2. used to securely communicate JSON object
+
 3. consists of a header, payload and signature
+
 4. self-contained
+
 
 ````
 $ npm install --save jsonwebtoken
@@ -84,10 +91,8 @@ var jwt = require('jsonwebtoken');
 var token = jwt.sign({ foo: 'bar' }, 'shhhhh');
 ````
 
-how to apply
+how to apply jwt
 ![jwt](https://user-images.githubusercontent.com/22507322/37370593-b52689be-26da-11e8-95ca-b76b252e379b.png)
 
 
 
-You can get also reference from here https://github.com/ericdouglas/MEAN-Learning
-https://www.udemy.com/angular-2-and-nodejs-the-practical-guide/learn/v4/overview
