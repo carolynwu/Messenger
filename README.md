@@ -9,7 +9,7 @@ Use Mean stack to build a social network application.
 Angular2 as a fronted-end, with Node.js, Express and MongoDB as a backend.
 
 
-### knowledge about Node.js and Angular 
+### Knowledge about Node.js and Angular 
 * Some notes about Node.js:
 
   Node is a runtime environment for executing JavaScript code.
