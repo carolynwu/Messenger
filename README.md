@@ -2,10 +2,12 @@
 
 :zap: Click: http://socialapplication-env.us-east-2.elasticbeanstalk.com   
 
+
 ## Introduction
 Use Mean stack to build a social network application.
 
 Angular2 as a fronted-end, with Node.js, Express and MongoDB as a backend.
+
 
 ### knowledge about Node.js and Angular 
 * Some notes about Node.js:
@@ -24,9 +26,19 @@ Angular2 as a fronted-end, with Node.js, Express and MongoDB as a backend.
 
   Angular2 uses TypeScript to provide a good user experience
 
+### Node.js and Angular2 work together
+Angular 2+NodeJS
+![screenshot 8](https://user-images.githubusercontent.com/22507322/36977257-2a4751c4-2046-11e8-9cda-ac5f74b00b64.png)
+
+how to use http in Angular2?  
+make HTTP requests using RxJs Observable library.
+![screenshot 8 _li](https://user-images.githubusercontent.com/22507322/36978012-bd293ea6-2048-11e8-83db-418d9cd8d50c.jpg)
+
+
+
 
 ## Strategies
-* First STTEP: Set up the environment:  
+* Set up the environment:  
 
 First, you need to set up the environment, download Node.js with the lastest vision https://nodejs.org/en/ 
                                   mongoDB https://www.mongodb.com/download-center#community.
@@ -47,15 +59,6 @@ set up routing:  
   
   export const routing=RouterModule.forRoot(APP_ROUTES);
 ````
-
-Second STEP: figure out how to make node.js and Angular 2 work together
-
-Angular 2+NodeJS
-![screenshot 8](https://user-images.githubusercontent.com/22507322/36977257-2a4751c4-2046-11e8-9cda-ac5f74b00b64.png)
-
-how to use http in Angular2?  
-make HTTP requests using RxJs Observable library.
-![screenshot 8 _li](https://user-images.githubusercontent.com/22507322/36978012-bd293ea6-2048-11e8-83db-418d9cd8d50c.jpg)
 
 
 App_Routes is the type of Routes which is provided by @angular router package,each route has a path which is the part we see in the URL after the slash.
