@@ -92,7 +92,7 @@ var token = jwt.sign({ foo: 'bar' }, 'shhhhh');
 
 ## Challenging
 ### Backend: how a request travels throught the application
-The application.js file which used to set up Express app holds the code which is excuted on each request reaching the server.
+1. The application.js file which used to set up Express app holds the code which is excuted on each request reaching the server.
 
    ````
     app.use(function (req, res, next) {
@@ -109,11 +109,11 @@ This set up to make sure we always render the Angular2 application.
 (reference from https://www.udemy.com/angular-2-and-nodejs-the-practical-guide/learn/v4/content) section 2 lecture 9
 
 
-how to apply jwt
+2. how to apply jwt
 ![jwt](https://user-images.githubusercontent.com/22507322/37370593-b52689be-26da-11e8-95ca-b76b252e379b.png)
 
 
-how to use http in Angular2?  
+3. how to use http in Angular2?  
 make HTTP requests using RxJs Observable library.
 ![screenshot 8 _li](https://user-images.githubusercontent.com/22507322/36978012-bd293ea6-2048-11e8-83db-418d9cd8d50c.jpg)
 
