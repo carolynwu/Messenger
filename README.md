@@ -92,7 +92,7 @@ var token = jwt.sign({ foo: 'bar' }, 'shhhhh');
 
 ## Challenging
 ### Backend: how a request travels throught the application
-    The application.js file which used to set up Express app holds the code which is excuted on each request reaching the server.
+The application.js file which used to set up Express app holds the code which is excuted on each request reaching the server.
 
    ````
     app.use(function (req, res, next) {
@@ -100,13 +100,13 @@ var token = jwt.sign({ foo: 'bar' }, 'shhhhh');
     });
    ````
     
-    when there are error pages, it will render the index.hbs file from views folder, which is also the same file holding Angular2 application. 
+when there are error pages, it will render the index.hbs file from views folder, which is also the same file holding Angular2 application. 
 
-    set up main routing in the Angular2 app, most of routes will not be found in the server, only have the back end routes for Angular2 to connect behind the scenes on the Server. All the user-relate routes are stored in the Angular2 app. Each request sent to the server or whenever we reload the page, it will reach the server first, and not Angular2.
+set up main routing in the Angular2 app, most of routes will not be found in the server, only have the back end routes for Angular2 to connect behind the scenes on the Server. All the user-relate routes are stored in the Angular2 app. Each request sent to the server or whenever we reload the page, it will reach the server first, and not Angular2.
 
-    This set up to make sure we always render the Angular2 application.
+This set up to make sure we always render the Angular2 application.
 
-    (reference from https://www.udemy.com/angular-2-and-nodejs-the-practical-guide/learn/v4/content) section 2 lecture 9
+(reference from https://www.udemy.com/angular-2-and-nodejs-the-practical-guide/learn/v4/content) section 2 lecture 9
 
 
 how to apply jwt
