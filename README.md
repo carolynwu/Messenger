@@ -10,7 +10,7 @@ Angular2 as a fronted-end, with Node.js, Express and MongoDB as a backend.
 
 
 ### Knowledge about Node.js and Angular 
-* Some notes about Node.js:
+#### Some notes about Node.js:
 
   1. Node is a runtime environment for executing JavaScript code.
 
@@ -23,9 +23,19 @@ Angular2 as a fronted-end, with Node.js, Express and MongoDB as a backend.
 (reference from https://stackoverflow.com/questions/12616153/what-is-express-js)
 
 
-* Some notes about Angular2:
+#### Some notes about Angular2:
 
   Angular2 uses TypeScript to provide a good user experience
+1. ng-model:
+
+The ng-model directive binds the value of HTML controls (input, select, textarea) to application data.
+* Directive
+property- DOM, attribute- HTML
+
+* `Two-way binding`
+
+reference from https://www.w3schools.com/angular/angular_model.asp
+
 
 ### How Node.js and Angular2 work together
 Angular 2+NodeJS
