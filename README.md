@@ -36,6 +36,8 @@ property- DOM, attribute- HTML
 
 reference from https://www.w3schools.com/angular/angular_model.asp
 
+2. Services &Dependency Injection ??
+
 
 ### How Node.js and Angular2 work together
 Angular 2+NodeJS
