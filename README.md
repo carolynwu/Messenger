@@ -17,7 +17,7 @@ Angular2 as a fronted-end, with Node.js, Express and MongoDB as a backend.
   2. There are two key components of the web application: client and service. Node.js is bascially JavaScript on the server part.
 
   **Express.js**
-  1. This islightweight framework
+  1. This is lightweight framework
   2. > That you don't have to repeat same code over and over again. Node.js is a low-level I/O mechanism which has an HTTP module. If         you just use an HTTP module, a lot of work like parsing the payload, cookies, storing sessions (in memory or in Redis), selecting       the right route pattern based on regular expressions will have to be re-implemented. With Express.js it there for you to use. 
 
 (reference from https://stackoverflow.com/questions/12616153/what-is-express-js)
