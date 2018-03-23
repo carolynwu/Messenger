@@ -73,6 +73,13 @@ set up routing:  
 
 
 * Users and Authentication
+
+In normal application, the authentication managered by a session, which means to keep a session on the server, and a cookie on the client to know if the client is logged in and delete or invalidate the session once the client log out.
+
+In Angular2 , we cannot use a session
+
+send token
+
 1. Encrypt the password stored in the database:
 
 ````
