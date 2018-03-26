@@ -42,7 +42,8 @@ reference from https://www.w3schools.com/angular/angular_model.asp
 
 traditional web application: send the request and wait for the response which introduces a slight delay between clicking and viewing the result
 
-Single page application: > interacts with the user by dynamically rewriting the current page rather than loading entire new pages from a server. 
+Single page application: 
+> interacts with the user by dynamically rewriting the current page rather than loading entire new pages from a server. 
 
 reference from wiki: single page application
 
