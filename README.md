@@ -89,7 +89,9 @@ set up routing:  
 
 In normal application, the authentication managered by a session, which means to keep a session on the server, and a cookie on the client to know if the client is logged in and delete or invalidate the session once the client log out.
 
-In Angular2 , we cannot use a session
+In Angular2 , we cannot use a session, the Angular2 only reaches out behind the scenes to fetch or put data
+
+previously, check on the server whether if this is a valid data, but instead of basically saving this in our session, we instead send back  a token in to the client. this token contains the encrypted user information and other data. This token can be stored in the client, if we want to fetch data , we attach this token to request and on the server valide this token
 
 send token
 
